@@ -39,6 +39,7 @@ $variable: valor;
 ```
 
 Hemos definido los valores de los colores primario y secundario y se han almacenado en dos variables con un nombre identificativo dentro del fichero _variables.scss:
+
 ![Fichero de variables de colores _variables.scss](colores.png)
 
 ### Parciales
