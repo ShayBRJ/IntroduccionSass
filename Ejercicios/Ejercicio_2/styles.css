@@ -1,0 +1,34 @@
+.tarjetas {
+  display: inline-grid;
+  flex-direction: column; }
+
+.tarjeta, .tarjeta-exito, .tarjeta-error, .tarjeta-info {
+  border-style: solid;
+  border-width: 100%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px; }
+
+.tarjeta-exito {
+  border-color: #008000;
+  background-color: #ADFF2F; }
+  .tarjeta-exito p {
+    color: #016301;
+    font-weight: bold; }
+
+.tarjeta-error {
+  border-color: #FF0000;
+  background-color: #FFC0CB; }
+  .tarjeta-error p {
+    color: #B22222;
+    font-weight: bold; }
+
+.tarjeta-info {
+  border-color: #87CEFA;
+  background-color: #E0FFFF; }
+  .tarjeta-info p {
+    color: #1E90FF;
+    font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */

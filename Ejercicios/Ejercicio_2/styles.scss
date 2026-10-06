@@ -1,0 +1,27 @@
+@import "_base.scss";
+
+.tarjetas {
+  display: inline-grid;
+  flex-direction: column;
+}
+
+.tarjeta {
+  @include tarjeta;
+}
+
+.tarjeta-exito {
+  @extend .tarjeta;
+  @include tipo_tarjeta(#016301, #ADFF2F, #008000) 
+}
+
+
+.tarjeta-error {
+  @extend .tarjeta;
+  @include tipo_tarjeta(#B22222, #FFC0CB, #FF0000)
+}
+
+
+.tarjeta-info {
+  @extend .tarjeta;
+  @include tipo_tarjeta(#1E90FF, #E0FFFF, #87CEFA)
+}

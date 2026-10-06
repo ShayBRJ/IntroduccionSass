@@ -1,0 +1,26 @@
+$estilo: solid;
+$width: 100%;
+$espaciado: 10px;
+$centrado: center;
+
+
+@mixin tarjeta {
+  border : {
+    style: $estilo;
+    width: $width;
+  }
+  width: $width;
+  padding: $espaciado;
+  text-align: $centrado;
+  margin: $espaciado;
+}
+
+@mixin tipo_tarjeta($colorPrimario, $colorSecundario, $borde) {
+  p {
+    color: $colorPrimario;
+    font-weight: bold;
+  }
+  border-color: $borde;
+  background-color: $colorSecundario;
+}
+
