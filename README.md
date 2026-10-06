@@ -96,3 +96,21 @@ Los mixins permiten definir estilos que pueden reutilizarse en diferentes partes
 Una vez finalizada la compilación, el resultado obtenido es el siguiente:
 
 ![html-ejercicio2](imgs/ej2.png)
+
+## Ejercicio 4
+
+**Crea dos mixins, uno que permita establecer la dirección de un contenedor flexbox y el otro que permita dar un tamaño específico en un elemento. Verifica que transpila y funciona correctamente sobre algún ejemplo.**
+
+
+Al igual que en el ejercicio anterior, en este ejercicio hemos trabajado con los mixins de Sass. En este caso, hemos creado dos mixin: uno para establecer la orientación de un contenedor Flexbox, recibiendo como parámetro la dirección (`row` o `column`), y otro para establecer el tamaño de un elemento, recibiendo como parámetros su altura y anchura.
+
+Para facilitar su uso, hemos definido las variables `$vertical` y `$horizontal`, que permiten indicar de forma sencilla la orientación del contenedor.
+
+![Implementación de Mixins](imgs/mixins.png)
+
+### Resultado
+Una vez finalizada la compilación, el resultado obtenido es el siguiente:
+
+![Vertical](imgs/horizontal.png)
+
+![Horizontal](imgs/vertical.png)

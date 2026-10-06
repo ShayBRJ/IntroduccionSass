@@ -1,0 +1,10 @@
+@import "_mixins.scss";
+
+.teide {
+  @include orientacion($horizontal);
+  & img {
+    margin: 5px;
+    padding: 5px;
+    @include tam(50px, 50px)
+  }
+}
