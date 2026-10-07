@@ -1,0 +1,67 @@
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: $header-size;
+  margin-bottom: $space-lg;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .form {
+    @include estilos-form;
+
+
+    & input,
+    & textarea {
+      border: 2px solid transparent;
+      border-radius: $radius-sm;
+      padding: 5px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+      &:focus {
+        border-color: $color-light;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    & label {
+      margin-top: $space-sm;
+    }
+  }
+
+  & .contenedor-inputs {
+    padding: $space-sm $space-md;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    & input {
+      height: 20px;
+    }
+
+    & .text-20 {
+      width: 50%;
+    }
+
+    & .text-100 {
+      width: 100%;
+    }
+
+    & .boton-registrar {
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-dark;
+        color: $color-light;
+      }
+    }
+  }
+}

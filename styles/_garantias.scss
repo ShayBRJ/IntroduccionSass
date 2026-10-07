@@ -1,0 +1,47 @@
+.garantias {
+  padding: $space-xl $space-md;
+  text-align: center;
+  margin-bottom: $space-lg;
+
+  & .garantias-intro {
+    max-width: 600px;
+    margin: $space-sm auto $space-lg;
+    color: $color-text-muted;
+  }
+
+  & .lista-garantias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @for $i from 1 to 5 {
+      & .garantia-#{$i} {
+        
+        margin: $space-md;
+        padding: $space-md;
+        max-width: 240px;
+        background: $color-light;
+        border-radius: $radius-sm;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        & img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+          margin-bottom: $space-sm;
+        }
+
+        & p {
+          font-size: 0.85rem;
+          color: $color-text-muted;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

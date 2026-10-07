@@ -19,7 +19,21 @@
 
 
     <section class="formulario">
-      <div class="form-menu"></div>
+      <div class="form-menu">
+        
+        <form action="solicitud-info", method="post", class="form">
+          <div class="contenedor-inputs">
+            <h2>COMENTARIOS</h2>
+            <input class="text-20" type="text" name="Nombre", placeholder="Nombre" required>
+            <input class="text-20" type="text" name="Apellidos", placeholder="Apellidos" required>
+            <input class="text-20" type="text" name="Correo", placeholder="Correo" required>
+            <label class="text-100" for="comentario">Déjanos un comentario</label>
+            <textarea class="text-100" id="comentario", name="comentario", rows=5, cols=auto placeholder="Escribe tu comentario"></textarea>
+            <input type="submit", value="Registrar" class="boton-registrar">
+          </div>
+
+        </form>
+      </div>
       <div>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/067/785/671/small/cute-ghost-with-pumpkin-in-halloween-illustration-vector.jpg" alt="fantasma">
       </div>
@@ -86,11 +100,42 @@
       </section>
 
 
-      <!-- GARANTÍAS -->
-       <section class="garantias">
-        
+    <!-- GARANTÍAS -->
+<section class="garantias">
+  <h3>Nuestras garantías</h3>
+  <p class="garantias-intro">
+    En TeideTales tu compra está protegida. Estas son las garantías que ofrecemos
+    en todos nuestros productos.
+  </p>
 
-       </section>
+  <div class="lista-garantias">
+
+    <article class="garantia-1">
+      <img src="imgs/garantia-1.png" alt="icono-devolucion">
+      <h4>Devolución gratuita</h4>
+      <p>Si no te convence, tienes 30 días para devolver tu pedido sin coste alguno.</p>
+    </article>
+
+    <article class="garantia-2">
+      <img src="imgs/garantia-2.png" alt="icono-envio">
+      <h4>Envío asegurado</h4>
+      <p>Todos los envíos van asegurados. Si llega dañado, lo reponemos gratis.</p>
+    </article>
+
+    <article class="garantia-3">
+      <img src="imgs/garantia-3.png" alt="icono-pago">
+      <h4>Pago 100% seguro</h4>
+      <p>Usamos pasarelas de pago cifradas para proteger tus datos en todo momento.</p>
+    </article>
+
+    <article class="garantia-4">
+      <img src="imgs/garantia-4.png" alt="icono-soporte">
+      <h4>Atención personalizada</h4>
+      <p>Nuestro equipo te responde en menos de 24 horas, todos los días del año.</p>
+    </article>
+
+  </div>
+</section>
 
 
 

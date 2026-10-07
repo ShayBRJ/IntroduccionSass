@@ -1,0 +1,31 @@
+.info {
+  padding: $space-sm;
+  text-align: center;
+  background: $color-dark;
+  color: $color-light;
+  margin-bottom: $space-sm;
+}
+
+.clientes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+   @for $i from 1 to 5 {
+
+    & .info-cliente-#{$i} {
+    @extend %card-producto; 
+    margin: $space-md;
+  }
+
+   }
+
+  
+
+  & img {
+    width: 100px;
+    height: 100px;
+    border-radius: $radius-round;
+    border: 5px solid $color-light;
+  }
+}

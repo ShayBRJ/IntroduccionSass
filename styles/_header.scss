@@ -1,0 +1,28 @@
+header {
+  width: 100%;
+  height: $header-size;
+  background: $color-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.contenedor {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  & img {
+    width: auto;
+    height: 100%;
+  }
+
+  & h1 {
+    width: 100%;
+    text-align: center;
+    color: $color-light;
+  }
+}
