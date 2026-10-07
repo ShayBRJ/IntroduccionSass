@@ -1,0 +1,26 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h3 {
+  @include encabezado;
+}
+
+h2 {
+  @include h2;
+}
+
+
+.centrado {
+  @include centrar-contenido;
+}
