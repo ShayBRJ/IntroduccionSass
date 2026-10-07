@@ -114,3 +114,23 @@ Una vez finalizada la compilación, el resultado obtenido es el siguiente:
 ![Vertical](imgs/horizontal.png)
 
 ![Horizontal](imgs/vertical.png)
+
+## Ejercicio 5
+
+**Utiliza un bucle @for para generar 5 clases de espaciado llamadas margin-1 a .margin-5. Cada clase debe tener un margin que se incremente en 10px por cada iteración. Transpila el archivo y revisa el CSS generado**
+
+### Estructura iterativa - Bucles for
+
+En este ejercicio hemos se han definido dos variables para establecer el rango que sobre el que se va iterar.
+
+* $inicio: Representa el valor mínimo de la iteración.
+* $fin: El último valor (excluido) hasta donde termina la iteración.
+
+Se iterará 5 veces teniendo como índice la variable $i. Utilizaremos esta para multiplicarlo por 10% para obtener las diferentes escalas de márgenes.
+
+Por último para establecer los identificadores de los selectores. Haremos uso de la interpolación de variables. Este técnica nos permite incrustar variables en cadenas de texto. La hemos utilizado para los selectores de márgenes e identificarlos correctamene: margin-1, margin-2...
+
+### Resultado
+Una vez finalizada la transpilación, el resultado obtenido es el siguiente:
+
+![Sentencias iterativas](imgs/bucles.png)

@@ -1,0 +1,8 @@
+$inicio: 1;
+$fin: 6;
+
+@for $i from $inicio to $fin {
+  .margin-#{$i} {
+    margin: 10px * $i;
+  }
+}
