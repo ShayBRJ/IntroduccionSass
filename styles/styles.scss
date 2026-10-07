@@ -1,92 +1,121 @@
-.body {
-  background-color: gray;
+$header-size: 100px;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-.secciones {
+body {
+  font-family: 'PT Mono', monospace;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-.header {
-    height: 200px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    container-type: size;
-    justify-items: center;
-    align-items: center;
-    border: black solid 2px;
-    
-    & #logo {
-    display: flex;
-    align-items: center;         
-    justify-content: center;     
-    height: 90%;
-    width: 90%;
-    overflow: hidden;
-  }
+header {
+  width: 100%;
+  height: $header-size;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 
-  & #logo img {
-      box-sizing: border-box;     
-      max-height: 100%;           
-      max-width: 100%;             
-      width: auto;                
-      height: auto;
-      object-fit: contain;
-      display: block;
-  }
+.contenedor {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  justify-content: space-between;
 
-  & #nombreEmpresa {
-    display: flex;
+  & img {
     width: auto;
-    container-type: size;
-    height: 100cqh;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
+    height:100%;
+  }
 
-    & p {
-      font-family: 'PT Mono', monospace;
-      width: 100%;
-      font-size: 40cqh;
-      text-align: center;
-    }
-}
+  & h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+  }
 }
 
 .formulario {
-  height: 100px;
-  width: 100%;
-  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: $header-size;
+  background-color: aquamarine;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.merchandising, .usuarios{
-  height: 100px;
-  width: 100%;
-  background-color: violet;
-  justify-items: center;
+h3 {
+  text-align: center;
+}
+
+.productos {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  gap: 10px;
-    & div {
-      background-color: blue;
-      height: 90%;
-      width: 100px;
-    }
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+  
+  & article {
+    margin: 10px;
+    height: 100px;
+  }
+  & article img {
+    width: 100px;
+    height: 100%;
+  }
 }
 
-.garantias {
+.info {
+  padding: 10px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+.clientes {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  @for $i from 1 to 6 {
+    & .info-cliente-#{$i} {
+      margin: 20px;
+    }
+  }
+ & img {
+  width: 100px;
   height: 100px;
-  width: 100%;
-  background-color: greenyellow;
+  border-radius: 50%;
+  border: 5px solid #fff;
+ }
 }
 
 .contacto {
-  height: 100px;
-  width: 100%;
-  background-color: aqua;
+  & p {
+    text-align: center;
+  }
+}
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  @for $i from 1 to 4 {
+    & .red-#{$i} img {
+      width: 50px;
+      height: 50px; 
+    }
+  }
 }
