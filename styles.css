@@ -1,0 +1,77 @@
+.body {
+  background-color: gray; }
+
+.secciones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.header {
+  height: 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  container-type: size;
+  justify-items: center;
+  align-items: center;
+  border: black solid 2px; }
+  .header #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    overflow: hidden; }
+  .header #logo img {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block; }
+  .header #nombreEmpresa {
+    display: flex;
+    width: auto;
+    container-type: size;
+    height: 100cqh;
+    width: 100%;
+    align-items: center;
+    justify-items: center; }
+    .header #nombreEmpresa p {
+      font-family: 'PT Mono', monospace;
+      width: 100%;
+      font-size: 40cqh;
+      text-align: center; }
+
+.formulario {
+  height: 100px;
+  width: 100%;
+  background-color: pink; }
+
+.merchandising, .usuarios {
+  height: 100px;
+  width: 100%;
+  background-color: violet;
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px; }
+  .merchandising div, .usuarios div {
+    background-color: blue;
+    height: 90%;
+    width: 100px; }
+
+.garantias {
+  height: 100px;
+  width: 100%;
+  background-color: greenyellow; }
+
+.contacto {
+  height: 100px;
+  width: 100%;
+  background-color: aqua; }
+
+/*# sourceMappingURL=styles.css.map */
